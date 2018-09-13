@@ -1,0 +1,1 @@
+mvn package && ./build.sh && ./start.sh

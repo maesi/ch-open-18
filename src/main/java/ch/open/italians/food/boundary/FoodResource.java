@@ -8,6 +8,6 @@ public class FoodResource {
 
     @GET
     public String getFood() {
-        return "pasta";
+        return "pizza";
     }
 }

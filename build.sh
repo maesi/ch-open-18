@@ -1,0 +1,1 @@
+docker build -t maesi/ch-open-18:0.0.1 .
