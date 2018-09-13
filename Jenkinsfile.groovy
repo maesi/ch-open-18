@@ -28,7 +28,7 @@ podTemplate(label: 'mypod', containers: [
             sh "git config user.email \"jenkins@khinkali.ch\""
             sh "git config user.name \"Jenkins\""
             sh "git tag -a ${env.VERSION} -m \"${env.VERSION}\""
-            withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+            withCredentials([usernamePassword(credentialsId: 'github_maesi', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                 sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/maesi/ch-open-18.git --tags"
             }
 
